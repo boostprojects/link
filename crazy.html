@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Я СОШЕЛ С УМА - $onik play</title>
+
+<link rel="icon" type="image/png" href="Я СОШЕЛ С УМА.png">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: white;
+            font-family: 'Dela Gothic One', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cover {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #b3b3b3;
+            margin-bottom: 30px;
+        }
+
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .link-item {
+            background: #1a1a1a;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease, transform 0.2s;
+        }
+
+        .link-item:hover {
+            background: #252525;
+            transform: scale(1.02);
+        }
+
+        .btn-listen {
+            background: #e10613;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+        }
+
+        .spotify:hover { border-left: 4px solid #1DB954; }
+        .yandex:hover { border-left: 4px solid #ffcc00; }
+        .vk:hover { border-left: 4px solid #0077FF; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="Я СОШЕЛ С УМА.png" alt="Обложка" class="cover">
+    
+    <h1>Я СОШЕЛ С УМА</h1>
+    <p>$onik play</p>
+
+    <div class="links-list">
+        <a href="https://open.spotify.com/artist/2vNlxK6Jm6nrXyz2eJMK5z" class="link-item spotify" target="_blank">
+            <span>Spotify</span>
+            <span class="btn-listen">Слушать</span>
+        </a>
+        
+        <a href="https://music.yandex.kz/artist/24684216" class="link-item yandex" target="_blank">
+            <span>Яндекс Музыка</span>
+            <span class="btn-listen">Слушать</span>
+        </a>
+
+        <a href="https://vk.com/artist/_onikplay" class="link-item vk" target="_blank">
+            <span>VK Music (UMA)</span>
+            <span class="btn-listen">Слушать</span>
+        </a>
+
+        <a href="https://music.mts.ru/artist/24684216" class="link-item" target="_blank">
+            <span>Kion Music</span>
+            <span class="btn-listen">Слушать</span>
+        </a>
+
+        <a href="https://zvuk.com/artist/213647112" class="link-item" target="_blank">
+            <span>Звук</span>
+            <span class="btn-listen">Слушать</span>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
