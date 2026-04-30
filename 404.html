@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — ТРЕК НЕ НАЙДЕН | NetPulse</title>
+    <!-- Подключаем Dela Gothic One из Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-red: #ff0000;
+            --bg-black: #0a0a0a;
+        }
+        body {
+            background-color: var(--bg-black);
+            color: white;
+            font-family: 'Dela Gothic One', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        .error-wrapper {
+            border: 5px solid var(--primary-red);
+            padding: 40px;
+            position: relative;
+            max-width: 600px;
+        }
+        .error-code {
+            font-size: clamp(5rem, 15vw, 10rem);
+            line-height: 0.9;
+            color: var(--primary-red);
+            margin: 0;
+            text-shadow: 4px 4px 0px rgba(255, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            margin: 20px 0;
+            color: white;
+            text-transform: uppercase;
+        }
+        p {
+            font-family: sans-serif; /* Обычный текст лучше оставить читаемым */
+            color: #ccc;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        .btn-red {
+            background: var(--primary-red);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: inline-block;
+            transition: 0.2s;
+            border: none;
+        }
+        .btn-red:hover {
+            background: white;
+            color: var(--primary-red);
+            transform: skew(-5deg);
+        }
+        /* Декоративный шум или помехи */
+        .glitch-line {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: var(--primary-red);
+            left: 0;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="error-wrapper">
+    <div class="glitch-line" style="top: 10%;"></div>
+    <div class="error-code">404</div>
+    <h1>ПУСТОТА</h1>
+    <p>ЭТОТ РИТМ БОЛЬШЕ НЕ СУЩЕСТВУЕТ ИЛИ ОН НИКОГДА НЕ БЫЛ ЗАПИСАН.</p>
+    <a href="/" class="btn-red">ВЕРНУТЬСЯ В NETPULSE</a>
+    <div class="glitch-line" style="bottom: 10%;"></div>
+</div>
+
+</body>
+</html>
